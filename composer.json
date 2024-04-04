@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "digikraaft/laravel-paystack-webhooks": "^3.0",
+        "digikraaft/laravel-paystack-webhooks": "dev-fixes",
         "digikraaft/paystack-php": "^2.2",
         "laravel/framework": "^11.0"
     },
@@ -59,6 +59,12 @@
             }
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pheeque/laravel-paystack-webhooks"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
