@@ -40,7 +40,7 @@ class PaystackSubscriptionServiceProvider extends ServiceProvider
             'namespace' => 'Digikraaft\PaystackSubscription\Http\Controllers',
             'as' => 'paystack.',
         ], function () {
-            $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+            Route::post('webhook', 'WebhookController@handleWebhook')->name('webhook');
         });
     }
 }
